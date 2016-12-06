@@ -109,7 +109,7 @@ echo "<b>Id do Contato:</b> $dados[id_contato]<br />";
 
 	echo "<center<b><a href='form-alterar-contato.php?id_contato={$dados['id_contato']}'>Atualizar Contato</a></b>";
 
-	echo "<b><a href='index.php'>Voltar</a></b></center>";
+	echo "<b><a href='agenda.php'>Voltar</a></b></center>";
 	echo("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t");
 
 	   echo "</tr>";

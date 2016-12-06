@@ -2,7 +2,7 @@
 include "config.php";
 ?>
 
-<a href="index.php">Voltar</a>
+<a href="agenda.php">Voltar</a>
 
 <br>
   <center>

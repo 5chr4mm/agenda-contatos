@@ -56,7 +56,7 @@ echo "<font size=1>Id: $dados[id_contato]</font>";
 echo "</table>";
 }
 
-echo "<b><center><a href='index.php'>Voltar</a></b></center>";
+echo "<b><center><a href='agenda.php'>Voltar</a></b></center>";
 	echo("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t");
 ?>
 

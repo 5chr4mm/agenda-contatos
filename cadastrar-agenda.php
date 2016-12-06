@@ -32,7 +32,7 @@ Values
 $query = mysql_query($sql);
 //Verifico se o registro foi inserido com sucesso
 if ($query == true) {
-    include "index.php";
+    include "agenda.php";
 }
 else{
     echo "Não foi possivel inserir o registro - entre em contato com o webmaster ".mysql_error();
