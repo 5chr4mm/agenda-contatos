@@ -10,7 +10,7 @@ include "config.php";
 <?
 $inicial= $_GET['id_contato'];
 
-$busca = mysql_query("select * from agenda where id_contato='$inicial%'") or trigger_error('Erro ao executar consutla. Detalhes = ' . mysql_error());
+$busca = mysqli_query("select * from agenda where id_contato='$inicial%'") or trigger_error('Erro ao executar consutla. Detalhes = ' . mysqli_error());
 
 //echo $inicial;
 
@@ -27,7 +27,7 @@ if (empty($busca)) { //Se nao achar nada, lança essa mensagem
 
 // quando existir algo em '$busca' ele realizará o script abaixo.
 
-while ($dados = mysql_fetch_array($busca)) {
+while ($dados = mysqli_fetch_array($busca)) {
 
 
 	echo "<table width=700 align=center>";
