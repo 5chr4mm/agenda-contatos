@@ -40,10 +40,10 @@ include "config.php";
 <?php
 
 $sql = "select * from agenda where id_contato=" .$_GET['id_contato'];
-$resultado = mysqli_query($sql)
+$resultado = mysql_query($sql)
 or die ("Não foi possivel realizar a consulta");
 
-$linha = mysqli_fetch_array($resultado);
+$linha = mysql_fetch_array($resultado);
 ?>
 
 <br>

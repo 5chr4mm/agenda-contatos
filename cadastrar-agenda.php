@@ -29,12 +29,12 @@ Values
 //echo $sql;
 //Executo a minha query
 //echo $sql;
-$query = mysqli_query($sql);
+$query = mysql_query($sql);
 //Verifico se o registro foi inserido com sucesso
 if ($query == true) {
     include "agenda.php";
 }
 else{
-    echo "Não foi possivel inserir o registro - entre em contato com o webmaster ".mysqli_error();
+    echo "Não foi possivel inserir o registro - entre em contato com o webmaster ".mysql_error();
 }
 ?>
