@@ -18,7 +18,7 @@
    fclose($fp); 
    
    mysqli_select_db($conn, DB_NAME);
-   $retval = mysqli_query( $sql, $conn );
+   $retval = mysqli_query($conn, $sql);
    
    if(! $retval ) {
       die('Não pode criar a tabela: ' . mysqli_error());
