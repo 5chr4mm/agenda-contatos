@@ -12,29 +12,11 @@ web1:
   type: php
   version: 5.4
   stability: production
-  network_dirs:
-    storage1:
-      - usr/uploads
-  httpd_document_root: app
   php_extensions:
     - mysql
-    - gd
-    - eaccelerator
   
 database1:
   name: posts
   type: mysql
-  topology: redundant
-  
-storage1:
-  name: filestore
-  type: nfs
-  
-cache1:
-  name: sessions
-  type: redis
-  
-worker1:
-  name: image_processor
-  type: php
-  exec: 'php workers/image_processor.php'
+  topology: single
+  version: 5.6
