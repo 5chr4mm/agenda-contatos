@@ -1,6 +1,7 @@
 web1:
   php_extensions:
     - mysql
+	- mysqli
     - pdo_mysql
   
 database1:
