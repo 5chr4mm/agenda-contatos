@@ -23,7 +23,7 @@ Values
 '".$_POST['permissao']."'
 )";
 
-$query = mysqli_query($sql);
+$query = mysqli_query($db, $sql);
 //Verifico se o registro foi inserido com sucesso
 if ($query == true) {
     echo "<script>alert('usuário cadastrado com sucesso');</script>";

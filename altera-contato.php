@@ -18,7 +18,7 @@ observacao='".$_POST['observacao']."'
 
 where id_contato=" .$_GET['id_contato']);
 
-$resultado = mysqli_query($sql)
+$resultado = mysqli_query($db, $sql)
 or die (mysqli_error());
 ?>
 <br>

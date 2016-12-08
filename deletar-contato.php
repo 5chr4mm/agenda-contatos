@@ -9,7 +9,7 @@ include "config.php";
 //Monto minha query de exclusão de dados
 $sql = "DELETE FROM agenda WHERE id_contato = ".$_GET["id_contato"];
 //Executo a minha query
-$query = mysqli_query($sql);
+$query = mysqli_query($db, $sql);
 //Verifico se o registro foi excluído com sucesso
 if ($query == true) {
     echo "Registro excluído com sucesso";

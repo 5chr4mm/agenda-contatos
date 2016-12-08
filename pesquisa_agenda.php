@@ -10,7 +10,7 @@ include "config.php";
 <?
 $inicial= $_GET['contato'];
 
-$busca = mysqli_query("select * from agenda where nome like '$inicial%'") or trigger_error('Erro ao executar consutla. Detalhes = ' . mysqli_error());
+$busca = mysqli_query($db, "select * from agenda where nome like '$inicial%'") or trigger_error('Erro ao executar consutla. Detalhes = ' . mysqli_error());
 
 //echo $busca;
 

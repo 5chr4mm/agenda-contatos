@@ -29,7 +29,7 @@ Values
 //echo $sql;
 //Executo a minha query
 //echo $sql;
-$query = mysqli_query($sql);
+$query = mysqli_query($db, $sql);
 //Verifico se o registro foi inserido com sucesso
 if ($query == true) {
     include "agenda.php";
