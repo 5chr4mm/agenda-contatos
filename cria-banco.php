@@ -1,8 +1,11 @@
 <?php
-   $dbhost = 'DATABASE1_HOST';
-   $dbuser = 'DATABASE1_USER';
-   $dbpass = 'DATABASE1_PASS';
-   $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+
+	define('DB_HOST', $_SERVER['DATABASE1_HOST']);
+	define('DB_USER', $_SERVER['DATABASE1_USER']);
+	define('DB_PASSWORD', $_SERVER['DATABASE1_PASS']);
+	define('DB_NAME', $_SERVER['DATABASE1_NAME']);
+
+   $conn = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
    
    if(! $conn ) {
       die('Não pode conectar: ' . mysql_error());
@@ -14,7 +17,7 @@
    $sql = fread($fp, filesize($query_file));
    fclose($fp); 
    
-   mysql_select_db('DATABASE1_NAME');
+   mysql_select_db(DB_NAME);
    $retval = mysql_query( $sql, $conn );
    
    if(! $retval ) {
