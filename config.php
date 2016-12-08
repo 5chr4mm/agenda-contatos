@@ -1,18 +1,6 @@
 <?php
-
-$servername = "DATABASE1_HOST";
-$username = "DATABASE1_USER";
-$password = "DATABASE1_PASS";
-$database = "DATABASE1_PASS";
-
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully"; 
-    }
-catch(PDOException $e)
-    {
-    echo "Connection failed: " . $e->getMessage();
-    }
+$db = mysqli_connect("DATABASE1_HOST","DATABASE1_USER","DATABASE1_PASS");
+$dado = mysqli_select_db("DATABASE1_NAME",$db);
 ?>
+
+   <!-- Agenda de contatos desenvolvida por Alexandre Pina - alexandrepina25@yahoo.co.uk -->
