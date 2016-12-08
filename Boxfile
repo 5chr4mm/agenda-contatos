@@ -1,9 +1,8 @@
 web1:
   name: site
   php_extensions:
-    - mysql
-	- mysqli
-    - pdo_mysql
+  - mysqli
+  - pdo_mysql
   
 database1:
   name: posts
