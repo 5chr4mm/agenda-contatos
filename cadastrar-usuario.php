@@ -23,14 +23,14 @@ Values
 '".$_POST['permissao']."'
 )";
 
-$query = mysql_query($sql);
+$query = mysqli_query($sql);
 //Verifico se o registro foi inserido com sucesso
 if ($query == true) {
     echo "<script>alert('usuário cadastrado com sucesso');</script>";
     echo "<a href=pagina_principal.php>Voltar</a>";
 }
 else{
-    echo "Não foi possivel inserir o registro - entre em contato com o webmaster ".mysql_error();
+    echo "Não foi possivel inserir o registro - entre em contato com o webmaster ".mysqli_error();
 }
 ?>
 

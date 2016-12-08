@@ -4,6 +4,7 @@ web1:
   name: site
   php_extensions:
   - mysql
+  - mysqli
   
 database1:
   name: posts
