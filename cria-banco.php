@@ -17,7 +17,7 @@
    $sql = fread($fp, filesize($query_file));
    fclose($fp); 
    
-   mysqli_select_db(DB_NAME);
+   mysqli_select_db($conn, DB_NAME);
    $retval = mysqli_query( $sql, $conn );
    
    if(! $retval ) {
