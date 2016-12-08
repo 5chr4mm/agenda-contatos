@@ -1,19 +1,7 @@
-build:
-  type: php
-  version: 5.4
-  stability: production
-  exec:
-    - "composer install --no-interaction --prefer-source"
-  lib_dir: vendor
-  reuse_libs: true
-  
 web1:
-  name: site
-  type: php
-  version: 5.4
-  stability: production
   php_extensions:
     - mysql
+    - pdo_mysql
   
 database1:
   name: posts
