@@ -1,6 +1,10 @@
 <?php
-$db = mysql_connect("DATABASE1_HOST","DATABASE1_USER","DATABASE1_PASS");
-$dado = mysql_select_db("DATABASE1_NAME",$db);
-?>
 
-   <!-- Agenda de contatos desenvolvida por Alexandre Pina - alexandrepina25@yahoo.co.uk -->
+define('DB_HOST', $_SERVER['DATABASE1_HOST']);
+define('DB_USER', $_SERVER['DATABASE1_USER']);
+define('DB_PASSWORD', $_SERVER['DATABASE1_PASS']);
+define('DB_NAME', $_SERVER['DATABASE1_NAME']);
+
+$db = mysql_connect("DB_HOST","DB_USER","DB_PASSWORD");
+$dado = mysql_select_db("DB_NAME",$db);
+?>
